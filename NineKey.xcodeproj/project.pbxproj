@@ -14,6 +14,8 @@
 		EFA1229722A1E7AB00FC3798 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFA1229522A1E7AB00FC3798 /* LaunchScreen.storyboard */; };
 		EFA122A222A1E7AB00FC3798 /* NineKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA122A122A1E7AB00FC3798 /* NineKeyTests.swift */; };
 		EFA122AD22A1E7AB00FC3798 /* NineKeyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA122AC22A1E7AB00FC3798 /* NineKeyUITests.swift */; };
+		EFA122C122A1E98800FC3798 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA122C022A1E98800FC3798 /* KeyboardViewController.swift */; };
+		EFA122C522A1E98800FC3798 /* Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EFA122BE22A1E98800FC3798 /* Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +33,28 @@
 			remoteGlobalIDString = EFA1228822A1E7A900FC3798;
 			remoteInfo = NineKey;
 		};
+		EFA122C322A1E98800FC3798 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFA1228122A1E7A900FC3798 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFA122BD22A1E98800FC3798;
+			remoteInfo = Keyboard;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EFA122C922A1E98800FC3798 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EFA122C522A1E98800FC3798 /* Keyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		EFA1228922A1E7A900FC3798 /* NineKey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NineKey.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +70,9 @@
 		EFA122A822A1E7AB00FC3798 /* NineKeyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NineKeyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFA122AC22A1E7AB00FC3798 /* NineKeyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NineKeyUITests.swift; sourceTree = "<group>"; };
 		EFA122AE22A1E7AB00FC3798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFA122BE22A1E98800FC3798 /* Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Keyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFA122C022A1E98800FC3798 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		EFA122C222A1E98800FC3798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +97,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EFA122BB22A1E98800FC3798 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +113,7 @@
 				EFA1228B22A1E7A900FC3798 /* NineKey */,
 				EFA122A022A1E7AB00FC3798 /* NineKeyTests */,
 				EFA122AB22A1E7AB00FC3798 /* NineKeyUITests */,
+				EFA122BF22A1E98800FC3798 /* Keyboard */,
 				EFA1228A22A1E7A900FC3798 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +124,7 @@
 				EFA1228922A1E7A900FC3798 /* NineKey.app */,
 				EFA1229D22A1E7AB00FC3798 /* NineKeyTests.xctest */,
 				EFA122A822A1E7AB00FC3798 /* NineKeyUITests.xctest */,
+				EFA122BE22A1E98800FC3798 /* Keyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +160,15 @@
 			path = NineKeyUITests;
 			sourceTree = "<group>";
 		};
+		EFA122BF22A1E98800FC3798 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				EFA122C022A1E98800FC3798 /* KeyboardViewController.swift */,
+				EFA122C222A1E98800FC3798 /* Info.plist */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +179,12 @@
 				EFA1228522A1E7A900FC3798 /* Sources */,
 				EFA1228622A1E7A900FC3798 /* Frameworks */,
 				EFA1228722A1E7A900FC3798 /* Resources */,
+				EFA122C922A1E98800FC3798 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EFA122C422A1E98800FC3798 /* PBXTargetDependency */,
 			);
 			name = NineKey;
 			productName = NineKey;
@@ -181,6 +227,23 @@
 			productReference = EFA122A822A1E7AB00FC3798 /* NineKeyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		EFA122BD22A1E98800FC3798 /* Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFA122C622A1E98800FC3798 /* Build configuration list for PBXNativeTarget "Keyboard" */;
+			buildPhases = (
+				EFA122BA22A1E98800FC3798 /* Sources */,
+				EFA122BB22A1E98800FC3798 /* Frameworks */,
+				EFA122BC22A1E98800FC3798 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Keyboard;
+			productName = Keyboard;
+			productReference = EFA122BE22A1E98800FC3798 /* Keyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,6 +265,9 @@
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = EFA1228822A1E7A900FC3798;
 					};
+					EFA122BD22A1E98800FC3798 = {
+						CreatedOnToolsVersion = 10.1;
+					};
 				};
 			};
 			buildConfigurationList = EFA1228422A1E7A900FC3798 /* Build configuration list for PBXProject "NineKey" */;
@@ -220,6 +286,7 @@
 				EFA1228822A1E7A900FC3798 /* NineKey */,
 				EFA1229C22A1E7AB00FC3798 /* NineKeyTests */,
 				EFA122A722A1E7AB00FC3798 /* NineKeyUITests */,
+				EFA122BD22A1E98800FC3798 /* Keyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -243,6 +310,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		EFA122A622A1E7AB00FC3798 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFA122BC22A1E98800FC3798 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -277,6 +351,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EFA122BA22A1E98800FC3798 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFA122C122A1E98800FC3798 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -289,6 +371,11 @@
 			isa = PBXTargetDependency;
 			target = EFA1228822A1E7A900FC3798 /* NineKey */;
 			targetProxy = EFA122A922A1E7AB00FC3798 /* PBXContainerItemProxy */;
+		};
+		EFA122C422A1E98800FC3798 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFA122BD22A1E98800FC3798 /* Keyboard */;
+			targetProxy = EFA122C322A1E98800FC3798 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -431,6 +518,7 @@
 		EFA122B222A1E7AB00FC3798 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NineKey/Info.plist;
@@ -448,6 +536,7 @@
 		EFA122B322A1E7AB00FC3798 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NineKey/Info.plist;
@@ -540,6 +629,42 @@
 			};
 			name = Release;
 		};
+		EFA122C722A1E98800FC3798 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Keyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pondokios.NineKey.Keyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EFA122C822A1E98800FC3798 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Keyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pondokios.NineKey.Keyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -575,6 +700,15 @@
 			buildConfigurations = (
 				EFA122B822A1E7AB00FC3798 /* Debug */,
 				EFA122B922A1E7AB00FC3798 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFA122C622A1E98800FC3798 /* Build configuration list for PBXNativeTarget "Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFA122C722A1E98800FC3798 /* Debug */,
+				EFA122C822A1E98800FC3798 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
