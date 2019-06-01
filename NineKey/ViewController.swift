@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ViewDSL
 import EventClosure
 
 class ViewController: UIViewController {
