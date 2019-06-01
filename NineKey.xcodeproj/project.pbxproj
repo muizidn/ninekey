@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,7 @@
 		EFA122AD22A1E7AB00FC3798 /* NineKeyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA122AC22A1E7AB00FC3798 /* NineKeyUITests.swift */; };
 		EFA122C122A1E98800FC3798 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA122C022A1E98800FC3798 /* KeyboardViewController.swift */; };
 		EFA122C522A1E98800FC3798 /* Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EFA122BE22A1E98800FC3798 /* Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EFA122DF22A219B200FC3798 /* EventClosure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA122DD22A2189300FC3798 /* EventClosure.framework */; };
 		F9976B5E4C121E0620663B0E /* Pods_NineKey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0CE2921C9CBF4DF64A0D85E /* Pods_NineKey.framework */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +89,7 @@
 		EFA122BE22A1E98800FC3798 /* Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Keyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFA122C022A1E98800FC3798 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		EFA122C222A1E98800FC3798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFA122DD22A2189300FC3798 /* EventClosure.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventClosure.framework; path = Carthage/Build/iOS/EventClosure.framework; sourceTree = "<group>"; };
 		F0CE2921C9CBF4DF64A0D85E /* Pods_NineKey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NineKey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -96,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFA122DF22A219B200FC3798 /* EventClosure.framework in Frameworks */,
 				F9976B5E4C121E0620663B0E /* Pods_NineKey.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,6 +133,7 @@
 		CD1477F5814303D559C4DCB7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EFA122DD22A2189300FC3798 /* EventClosure.framework */,
 				3477EF62FC31218550738E95 /* Pods_Keyboard.framework */,
 				F0CE2921C9CBF4DF64A0D85E /* Pods_NineKey.framework */,
 				5E4FF6C7078D5716E58BAF88 /* Pods_NineKeyTests.framework */,
@@ -229,7 +233,7 @@
 				EFA1228622A1E7A900FC3798 /* Frameworks */,
 				EFA1228722A1E7A900FC3798 /* Resources */,
 				EFA122C922A1E98800FC3798 /* Embed App Extensions */,
-				59D68ED3B034F8AF6D2F5249 /* [CP] Embed Pods Frameworks */,
+				DDC3D9460506BD7E195B0AA9 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -423,23 +427,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		59D68ED3B034F8AF6D2F5249 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NineKey/Pods-NineKey-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NineKey/Pods-NineKey-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NineKey/Pods-NineKey-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		86AF181A4F84F19DCBFED36D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -483,6 +470,28 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		DDC3D9460506BD7E195B0AA9 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/EventClosure.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ViewDSL.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Carthage/Build/iOS/EventClosure.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Carthage/Build/iOS/ViewDSL.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -611,7 +620,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -666,7 +675,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -683,6 +692,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = NineKey/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -702,6 +715,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = NineKey/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
