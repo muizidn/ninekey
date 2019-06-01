@@ -1,0 +1,37 @@
+PODS:
+  - EventClosure (0.0.1)
+  - FlowConstraint (0.0.1)
+  - ViewDSL (0.0.6)
+
+DEPENDENCIES:
+  - EventClosure (from `https://github.com/muizidn/eventclosure`)
+  - FlowConstraint (from `https://github.com/muizidn/flowconstraint`)
+  - ViewDSL (from `https://github.com/muizidn/viewdsl`)
+
+EXTERNAL SOURCES:
+  EventClosure:
+    :git: https://github.com/muizidn/eventclosure
+  FlowConstraint:
+    :git: https://github.com/muizidn/flowconstraint
+  ViewDSL:
+    :git: https://github.com/muizidn/viewdsl
+
+CHECKOUT OPTIONS:
+  EventClosure:
+    :commit: 2ee4361b1f35f93fcf32dd035a8e18b626b9dbe4
+    :git: https://github.com/muizidn/eventclosure
+  FlowConstraint:
+    :commit: acc8a8b01c9282bd45de6a72e01639d05363e204
+    :git: https://github.com/muizidn/flowconstraint
+  ViewDSL:
+    :commit: d3792695cb86040f9836c609af2dc13b59307b16
+    :git: https://github.com/muizidn/viewdsl
+
+SPEC CHECKSUMS:
+  EventClosure: 4261b6dcc52756581bc72952d70982b37262a356
+  FlowConstraint: 2d350df474353a1d948de49ce38293aa10def1a5
+  ViewDSL: 56bd5a39ffba72130ef62d725bda297aa546951a
+
+PODFILE CHECKSUM: 0609dacb4774c7fcb101692b9b7bf49e86d483c9
+
+COCOAPODS: 1.7.0
