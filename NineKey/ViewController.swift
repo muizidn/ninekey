@@ -9,6 +9,7 @@
 import UIKit
 import ViewDSL
 import EventClosure
+import Alamofire
 
 class ViewController: UIViewController {
 
